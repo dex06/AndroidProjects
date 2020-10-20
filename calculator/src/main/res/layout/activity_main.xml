@@ -5,23 +5,22 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:orientation="vertical"
-    android:padding="25px">
+    android:orientation="vertical">
 
     <com.google.android.material.textview.MaterialTextView
         android:id="@+id/tvExpression"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:textAllCaps="false"
-        android:textSize="40sp"
         android:textStyle="bold"
         android:background="@android:color/black"
         android:text="@string/string_zero"
         android:textAlignment="textEnd"
         android:textColor="@color/white"
         android:textSize="50sp"
+        android:paddingEnd="25sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight_percent="0.25"
+        app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -32,7 +31,9 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:textAllCaps="false"
-        android:textSize="40sp"
+        android:paddingEnd="25sp"
+        android:textSize="35sp"
+        android:textAlignment="textEnd"
         android:textStyle="bold"
         android:background="@android:color/black"
         android:hint="@string/_0"
@@ -40,10 +41,58 @@
 
         android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="@id/tvExpression"
-        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintHeight_percent="0.10"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toEndOf="@id/tvExpression"
         app:layout_constraintTop_toBottomOf="@id/tvExpression" />
+
+        <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvAC"
+        style="@style/numberButtonStyle"
+        android:layout_height="0dp"
+        android:text="@string/_AC"
+        android:background="@drawable/button_selector"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvPlusMoins"
+        style="@style/numberButtonStyle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="@string/_PlusMoins"
+        android:background="@drawable/button_selector"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@+id/tvAC"
+        app:layout_constraintTop_toBottomOf="@+id/tvResult"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvPercent"
+        style="@style/numberButtonStyle"
+        android:layout_height="0dp"
+        android:text="@string/_Percent"
+        android:background="@drawable/button_selector"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintStart_toEndOf="@id/tvPlusMoins"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintWidth_percent="0.25" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/tvDivision"
+        style="@style/ActionButtonStyle"
+        android:layout_height="0dp"
+
+        android:text="@string/_Division"
+        android:background="@drawable/button_selector"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHeight_percent="0.15"
+        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintWidth_percent="0.25"
+        app:layout_constraintStart_toEndOf="@id/tvPercent"
+        />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tv7"
@@ -52,7 +101,7 @@
         android:text="@string/_7"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@id/tvAC"
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
@@ -63,7 +112,7 @@
         android:text="@string/_8"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toEndOf="@+id/tv7"
-        app:layout_constraintTop_toBottomOf="@+id/tvResult"
+        app:layout_constraintTop_toBottomOf="@+id/tvAC"
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
@@ -73,18 +122,18 @@
         android:text="@string/_9"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toEndOf="@id/tv8"
-        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@id/tvAC"
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tvX"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
-        android:background="@color/actionButton"
+
         android:text="@string/x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"
-        app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintTop_toBottomOf="@id/tvAC"
         app:layout_constraintWidth_percent="0.25"
         app:layout_constraintStart_toEndOf="@id/tv9"
         />
@@ -124,7 +173,7 @@
         android:id="@+id/tvMinus"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
-        android:background="@color/actionButton"
+
         android:text="@string/minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"
@@ -156,7 +205,7 @@
         android:id="@+id/tvEqual"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
-        android:background="@color/actionButton"
+
         android:text="@string/equal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"
@@ -199,7 +248,6 @@
         android:id="@+id/tvPlus"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
-        android:background="@color/actionButton"
         android:text="@string/plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.15"

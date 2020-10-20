@@ -17,6 +17,9 @@
     <style name="ActionButtonStyle" >
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginEnd">0.8dp</item>
+        
+
+        <item name="android:background">@drawable/shape</item>
         <item name="android:titleMarginStart">0.8dp</item>
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
@@ -30,11 +33,12 @@
     <style name="numberButtonStyle">
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginStart">0.8dp</item>
+
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">@color/white</item>
+        <item name="android:background">@drawable/shape</item>
         <item name="backgroundTint">@color/numberButton</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textColor">@android:color/white</item>
