@@ -50,10 +50,17 @@ class MainActivity : AppCompatActivity() {
         numberCache.clear()
 
         val calculator = StringCalculator()
-        val answer = calculator.calculate(operationList)
+        try {
+            val answer = calculator.calculate(operationList)
+            updateDisplay("=" + answer.toString())
+            clearCache()
+        } catch (e: ArithmeticException) {
+            updateDisplay("Error")
+            clearCache()
+        }
 
-        updateDisplay("=" + answer.toString())
-        clearCache()
+
+
     }
 
     fun negateNumber(view: View){

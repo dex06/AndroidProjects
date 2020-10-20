@@ -9,4 +9,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="actionButton">#F57C00</color>
     <color name="numberButton">#455A64</color>
+    <color name="functionalButton">#808080</color>
 </resources>

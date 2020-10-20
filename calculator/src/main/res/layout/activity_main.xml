@@ -47,8 +47,9 @@
         app:layout_constraintTop_toBottomOf="@id/tvExpression" />
 
         <com.google.android.material.button.MaterialButton
+        android:onClick="clearClick"
         android:id="@+id/tvAC"
-        style="@style/numberButtonStyle"
+        style="@style/functionalButtonStyle"
         android:layout_height="0dp"
         android:text="@string/_AC"
         android:background="@drawable/button_selector"
@@ -58,8 +59,10 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+
         android:id="@+id/tvPlusMoins"
-        style="@style/numberButtonStyle"
+        
+        style="@style/functionalButtonStyle"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="@string/_PlusMoins"
@@ -70,8 +73,9 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+
         android:id="@+id/tvPercent"
-        style="@style/numberButtonStyle"
+        style="@style/functionalButtonStyle"
         android:layout_height="0dp"
         android:text="@string/_Percent"
         android:background="@drawable/button_selector"
@@ -81,6 +85,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="buttonClick"
         android:id="@+id/tvDivision"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
@@ -95,6 +100,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv7"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -106,6 +112,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv8"
         style="@style/numberButtonStyle"
         android:layout_width="0dp"
@@ -118,6 +125,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv9"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -129,6 +137,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="buttonClick"
         android:id="@+id/tvX"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
@@ -143,6 +152,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv4"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -155,6 +165,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv5"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -166,6 +177,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv6"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -177,6 +189,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="buttonClick"
         android:id="@+id/tvMinus"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
@@ -190,34 +203,39 @@
         app:layout_constraintStart_toEndOf="@id/tv6"
         />
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv0"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
         android:text="@string/zero"
         android:background="@drawable/button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv1"
         app:layout_constraintWidth_percent="0.50" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tvDot"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
         android:text="@string/dot"
         android:background="@drawable/button_selector"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintStart_toEndOf="@id/tv0"
         app:layout_constraintTop_toBottomOf="@id/tv3"
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="equalsClick"
         android:id="@+id/tvEqual"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
         android:text="@string/equal"
         android:background="@drawable/button_selector"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHeight_percent="0.15"
         app:layout_constraintTop_toBottomOf="@id/tvPlus"
         app:layout_constraintWidth_percent="0.25" 
@@ -225,6 +243,7 @@
         />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv1"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -236,6 +255,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv2"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -247,6 +267,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="numberClick"
         android:id="@+id/tv3"
         style="@style/numberButtonStyle"
         android:layout_height="0dp"
@@ -258,6 +279,7 @@
         app:layout_constraintWidth_percent="0.25" />
 
     <com.google.android.material.button.MaterialButton
+        android:onClick="buttonClick"
         android:id="@+id/tvPlus"
         style="@style/ActionButtonStyle"
         android:layout_height="0dp"
