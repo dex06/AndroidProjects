@@ -76,6 +76,7 @@
         android:text="@string/x"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvResult"
+        app:layout_constraintStart_toEndOf="@id/tv9"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -119,6 +120,7 @@
         android:text="@string/minus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvX"
+        app:layout_constraintStart_toEndOf="@id/tv6"
         />
     <com.google.android.material.button.MaterialButton
         android:id="@+id/tv0"
@@ -150,6 +152,7 @@
         android:text="@string/equal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tvPlus"
+        app:layout_constraintStart_toEndOf="@id/tvDot"
         />
 
     <com.google.android.material.button.MaterialButton
@@ -192,6 +195,7 @@
         android:text="@string/plus"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv4"
+        app:layout_constraintStart_toEndOf="@id/tv3"
         />
 
 
