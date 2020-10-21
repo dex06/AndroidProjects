@@ -14,7 +14,12 @@
         <!-- Customize your theme here. -->
     </style>
 
-    <style name="functionalButtonStyle">
+    <style name="marginStyle">
+        <item name="layout_constraintWidth_percent">0.2</item>
+        <item name="layout_constraintHeight_percent">0.15</item>
+    </style>
+
+    <style name="functionalButtonStyle" parent="marginStyle" >
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginEnd">0.8dp</item>
         <item name="android:layout_marginBottom">0.8dp</item>
@@ -22,17 +27,19 @@
         <item name="android:background">@drawable/shape</item>
         <item name="android:titleMarginStart">0.8dp</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="backgroundTint">@color/functionalButton</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
+
     
     </style>
 
-    <style name="ActionButtonStyle" >
+
+    <style name="ActionButtonStyle" parent="marginStyle" >
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginEnd">0.8dp</item>
         <item name="android:layout_marginBottom">0.8dp</item>
@@ -41,20 +48,21 @@
         <item name="android:background">@drawable/shape</item>
         <item name="android:titleMarginStart">0.8dp</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="backgroundTint">@color/actionButton</item>
         <item name="android:textSize">25sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
+
     </style>
-    <style name="numberButtonStyle">
+    <style name="numberButtonStyle" parent="marginStyle" >
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginStart">0.8dp</item>
         <item name="android:layout_marginBottom">1.2dp</item>
         <item name="android:layout_width">0dp</item>
-        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_height">0dp</item>
         <item name="android:layout_weight">1</item>
         <item name="android:textStyle">bold</item>
         <item name="android:background">@drawable/shape</item>
@@ -62,6 +70,7 @@
         <item name="android:textSize">25sp</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:gravity">center</item>
+
 
     </style>
 </resources>
