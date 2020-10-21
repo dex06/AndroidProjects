@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.newsletter.R
@@ -38,14 +39,19 @@ class CategoriesFragment : Fragment() {
         val recyclerView: RecyclerView = view.findViewById(R.id.recycler_view)
 
         val articles = listOf<Category>(
-            Category("sante","image1"),
-            Category("sport", "image2"),
-            Category("politique","image3")
+            Category("sante","https://picsum.photos/200/300?random=1"),
+            Category("sport", "https://picsum.photos/seed/picsum/200/300?random=2"),
+            Category("politique","https://picsum.photos/seed/picsum/200/300?random=3"),
+            Category("commerce","https://picsum.photos/200/300?random=4"),
+            Category("politique","https://picsum.photos/200/300?random=5"),
+            Category("politique","https://picsum.photos/200/300?random=6")
+
         )
 
         val adapterRecycler = CategoryAdapter(articles)
+        recyclerView.hasFixedSize()
 
-        recyclerView.layoutManager = LinearLayoutManager(view.context)
+        recyclerView.layoutManager = GridLayoutManager(view.context, 2)
 
         recyclerView.adapter = adapterRecycler
     }
