@@ -36,6 +36,7 @@
         <item name="android:layout_marginTop">0.8dp</item>
         <item name="android:layout_marginEnd">0.8dp</item>
         <item name="android:layout_marginBottom">0.8dp</item>
+        <item name="android:layout_marginStart">0.8dp</item>
 
         <item name="android:background">@drawable/shape</item>
         <item name="android:titleMarginStart">0.8dp</item>
