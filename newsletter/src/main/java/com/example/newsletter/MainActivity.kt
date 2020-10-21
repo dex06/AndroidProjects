@@ -12,8 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         changeFragment(CategoriesFragment())
     }
-
-
 }
 
 fun MainActivity.changeFragment(fragment: Fragment) {
